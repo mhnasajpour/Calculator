@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display" id="screen"></div>
+      <div class="operators">
+        <div class="select" id="selector"></div>
+        <span
+          onclick="style_operator(0);display('*');"
+          class="operator centerize"
+          >×</span
+        >
+        <span
+          onclick="style_operator(1);display('+');"
+          class="operator centerize"
+          >+</span
+        >
+        <span
+          onclick="style_operator(2);display('=');"
+          class="operator centerize"
+          >=</span
+        >
+        <span
+          onclick="style_operator(3);display('-');"
+          class="operator centerize"
+          >-</span
+        >
+        <span
+          onclick="style_operator(4);display('/');"
+          class="operator centerize"
+          >÷</span
+        >
+      </div>
+      <div class="keys">
+        <div class="button centerize" onclick="display('1')">1</div>
+        <div class="button centerize" onclick="display('2')">2</div>
+        <div class="button centerize" onclick="display('3')">3</div>
+        <div class="button centerize" onclick="display('4')">4</div>
+        <div class="button centerize" onclick="display('5')">5</div>
+        <div class="button centerize" onclick="display('6')">6</div>
+        <div class="button centerize" onclick="display('7')">7</div>
+        <div class="button centerize" onclick="display('8')">8</div>
+        <div class="button centerize" onclick="display('9')">9</div>
+        <div class="button centerize" onclick="display('.')">.</div>
+        <div class="button centerize" onclick="display('0')">0</div>
+        <div class="button centerize" onclick="display('DEL')">
+          <img src="backspace.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
