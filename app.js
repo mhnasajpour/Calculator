@@ -1,5 +1,4 @@
 var is_show_equal = false;
-var is_sign = false;
 
 function style_operator(state){
     document.getElementById('selector').style.left = `${state * 55}px`;
@@ -21,7 +20,6 @@ function sign(char){
 
 function display(key){
     let str = document.getElementById('screen').innerHTML;
-    console.log(`harf akhar char: ${sign(str[str.length - 1])}   chiz hala: ${sign(key)}`);
 
     if(key == 'DEL')
         document.getElementById('screen').innerHTML = document.getElementById('screen').innerHTML.slice(0, -1);
