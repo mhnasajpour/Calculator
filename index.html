@@ -10,7 +10,15 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="display" id="screen"></div>
+      <div class="display">
+        <i id="screen"></i>
+        <img
+          src="bucket.png"
+          alt="eraser"
+          id="eraser"
+          onclick="document.getElementById('screen').innerText = '';style_operator(2);"
+        />
+      </div>
       <div class="operators">
         <div class="select" id="selector"></div>
         <span
